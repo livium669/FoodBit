@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBit</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Css Stylesheets -->
+    <link rel="stylesheet" href="/sass/styles.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" crossorigin="anonymous" />
+
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><img src="/images/favicon-32x32.png" alt="logoimgh">FoodBit</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" onClick="displayFormContact('block')">Contact us</a>
+                    </li>
+                </ul>
+
+                <i class="bx bx-x nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__container container grid">
+                <div class="hero__data">
+                    <h1 class="hero__bigheading">Hungry? You're in the right place.</h1>
+                    <p class="hero__description">After trying the delicious food, you will definitely come back to us.
+                    </p>
+                    <a href="#menu" class="button">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section container" id="services">
+            <span class="subtitle">Offering</span>
+            <h2 class="title">Why FoodBit?</h2>
+            <div class="services__container grid">
+                <div class="services__content">
+                    <i class='bx bx-stopwatch services__img'></i>
+                    <h3 class="services__title">Ready in 20 minutes</h3>
+                    <p class="services__description">
+                        You're only twenty minutes away from your delicious meal. We work with the best chefs in each
+                        town to ensure that you're 100% happy.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <i class='bx bx-check-shield services__img'></i>
+                    <h3 class="services__title">Excellent quality</h3>
+                    <p class="services__description">
+                        We offer our clients excellent quality services for many years, with the best and delicious food
+                        in the city.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <i class='bx bx-basket services__img'></i>
+                    <h3 class="services__title">Easy to order</h3>
+                    <p class="services__description">
+                        You can order directly from the site or by downloading the application.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+                <div class="about__data">
+                    <span class="subtitle about__initial">About us</span>
+                    <h2 class="title about__initial">We cook the best food</h2>
+                    <p class="about__description">Ball tip frankfurter spare ribs bacon shank. Pork chop short ribs
+                        salami chicken drumstick flank, sausage beef. Beef ribs tail bacon pork chop short loin swine
+                        chicken alcatra turducken porchetta drumstick picanha corned beef fatback.</p>
+                    <a href="#" class="button">Read more</a>
+                </div>
+                <img src="/images/aboutchef.jpg" alt="about" class="about__img">
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu section container" id="menu">
+            <span class="subtitle">Special Menu</span>
+            <h2 class="title">Menu of the week</h2>
+            <div class="menu__container grid">
+                <div class="menu__content">
+                    <img src="/images/chickensalad.png" alt="chickensalad" class="menu__img">
+                    <h3 class="menu__title">Chicken salad</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <div class="menu__star">
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star-half'></span>
+                    </div>
+                    <span class="menu__price">$14.00</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="/images/barbecuechickenpizza.png" alt="bbqpizza" class="menu__img">
+                    <h3 class="menu__title">BBQ Pizza</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <div class="menu__star">
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star-half'></span>
+                    </div>
+                    <span class="menu__price">$22.00</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="/images/pancake.png" alt="pancake" class="menu__img">
+                    <h3 class="menu__title">Pancake</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <div class="menu__star">
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                    </div>
+                    <span class="menu__price">$19.99</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="/images/cesarsalad.png" alt="cesarsalad" class="menu__img">
+                    <h3 class="menu__title">Cesar salad</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <div class="menu__star">
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star-half'></span>
+                    </div>
+                    <span class="menu__price">$8.99</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="/images/pizzamargarita.png" alt="pizzamargarita" class="menu__img">
+                    <h3 class="menu__title">Pizza margarita</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <div class="menu__star">
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star-half'></span>
+                    </div>
+                    <span class="menu__price">$14.99</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="/images/ricewithcurry.png" alt="ricewithcurry" class="menu__img">
+                    <h3 class="menu__title">Rice with curry</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <div class="menu__star">
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star-half'></span>
+                    </div>
+                    <span class="menu__price">$16.99</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="/images/roastbeef.png" alt="roastbeef" class="menu__img">
+                    <h3 class="menu__title">Roast beef</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <div class="menu__star">
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star-half'></span>
+                    </div>
+                    <span class="menu__price">$18.99</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="/images/pastacarbonara.png" alt="pastacarbonara" class="menu__img">
+                    <h3 class="menu__title">Pasta</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                    <div class="menu__star">
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star'></span>
+                        <span class='bx bxs-star-half'></span>
+                    </div>
+                    <span class="menu__price">$15.99</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section container" id="testimonials">
+            <div class="testimonials__container grid swiper-container testi">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="testimonials__opinion">Nullam molestie tortor vitae lacinia elementum. Nulla
+                            condimentum dolor quis posuere finibus. Curabitur ligula diam, suscipit in cursus ut,
+                            efficitur ac mi. Ut aliquet placerat odio, eget maximus tortor lacinia a.</p>
+                        <cite><img src="/images/customer-1.jpg" alt="customer" class="customer">Alberto Duncan</cite>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <p class="testimonials__opinion">Aullam molestie tortor vitae lacinia elementum. Nulla
+                            condimentum dolor quis posuere finibus. Curabitur ligula diam, suscipit in cursus ut,
+                            efficitur ac mi. Ut aliquet placerat odio, eget maximus tortor lacinia a.</p>
+                        <cite><img src="/images/customer-2.jpg" alt="customer" class="customer">Joana Silva</cite>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <p class="testimonials__opinion">Bullam molestie tortor vitae lacinia elementum. Nulla
+                            condimentum dolor quis posuere finibus. Curabitur ligula diam, suscipit in cursus ut,
+                            efficitur ac mi. Ut aliquet placerat odio, eget maximus tortor lacinia a.</p>
+                        <cite><img src="/images/customer-3.jpg" alt="customer" class="customer">Milton Chapman</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Section -->
+        <section class="app section container" id="app">
+            <div class="app__content grid">
+                <div class="app__data">
+                    <span class="subtitle app__initial">Take away</span>
+                    <h2 class="title app__initial">Simple Way To Order Your Food</h2>
+                    <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
+
+                    <div class="app__store">
+                        <a href="#"><img src="/images/app1.png" alt="app1" class="app__download"></a>
+                        <a href="#"><img src="/images/app2.png" alt="app2" class="app__download"></a>
+                    </div>
+                </div>
+                <img src="/images/appfoodbith3.png" alt="appimg" class="app__img">
+            </div>
+        </section>
+
+        <section class="footer section container">
+            <div class="footer__container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">FoodBit</a>
+                    <span class="footer__description">Vestibulum nec nibh vitae urna fermentum consectetur. Aliquam faucibus sodales convallis. Donec tincidunt mauris nec condimentum volutpat.</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery Support</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Terms of use</a></li>
+                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Users</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">User Login</a></li>
+                        <li><a href="#" class="footer__link">User Register</a></li>
+                        <li><a href="#" class="footer__link">Forgot Password</a></li>
+                        <li><a href="#" class="footer__link">Account Setting</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Address</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Chicago</a></li>
+                        <li><a href="#" class="footer__link">600 N Clark St</a></li>
+                        <li><a href="#" class="footer__link">+1 989-989-0455</a></li>
+                        <li><a href="#" class="footer__link">foodbit@email.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 FoodBit. All right reserved</p>
+        </section>
+    </main>
+
+     <!-- Contact -->
+     <div class="contact" id="contact">
+        <form action="#" id="form1" name="form1" method="POST">
+            <p class="contact__title">Let's talk</p>
+
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <input type="text" id="email" name="email" placeholder="Your email" required />
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+            <div>
+            <input type="submit" value="SEND" name="submit" id="button" />
+            </div>
+
+
+            <i class="bx bx-x contact__close" id="nav-close" onClick="displayFormContact('none')"></i>
+        </form>
+    </div>
+
+    <div class="float" onClick="displayFormContact('block')">
+        <i class='bx bxl-telegram my-float float-img'></i>
+    </div>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+
+</html>
